@@ -39,6 +39,11 @@ AND order_items.created_at < repeat_order_items.created_at
     sql: CAST(${TABLE}."NEXT_ORDER_DATE" AS TIMESTAMP);;
   }
 
+dimension: has_subsequent_order{
+  type: yesno
+  sql: ${next_order_id} > 0;;
+}
+
   dimension: next_order_id {
     type: number
     hidden: yes
