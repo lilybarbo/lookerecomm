@@ -40,8 +40,8 @@ view: order_items {
   dimension_group: shipping_days {
     type: duration
     intervals: [hour,day,week,month]
-    sql_start: ${TABLE}.created ;;
-    sql_end: ${TABLE}.delivered;;
+    sql_start: ${TABLE}.created_at ;;
+    sql_end: ${TABLE}.delivered_at;;
   }
 
   dimension: inventory_item_id {
