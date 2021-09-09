@@ -18,3 +18,7 @@ explore: order_items {
 explore: repeat_purchase_facts {
 
 }
+
+explore: users {
+
+}
