@@ -22,3 +22,7 @@ explore: repeat_purchase_facts {
 explore: users {
 
 }
+
+explore: products {
+
+}
