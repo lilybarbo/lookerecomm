@@ -18,13 +18,7 @@ view: products {
     type: string
     sql: ${brand} ;;
     html: {% if brand._value == "O'Neill" %}
-        <svg version="1.1"
-     baseProfile="full"
-     width="300" height="200"
-     xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="black" />
-  <circle cx="150" cy="100" r="90" fill="blue" />
-</svg>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/O%27Neill_%28brand%29_logo.svg/220px-O%27Neill_%28brand%29_logo.svg.png">
         {% elsif brand._value == "Calvin Klein" %}
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Calvin_klein_logo.svg/220px-Calvin_klein_logo.svg.png">
         {% elsif brand._value == "Hanes" %}
