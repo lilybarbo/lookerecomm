@@ -18,7 +18,7 @@ view: products {
     type: string
     sql: ${brand} ;;
     html: {% if brand._value == "O'Neill" %}
-      <img src = "http://www.w3.org/2000/svg">
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/9/99/Leo.svg">
         {% elsif brand._value == "Calvin Klein" %}
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Calvin_klein_logo.svg/220px-Calvin_klein_logo.svg.png">
         {% elsif brand._value == "Hanes" %}
