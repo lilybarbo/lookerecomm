@@ -14,22 +14,18 @@ view: products {
     sql: ${TABLE}."BRAND" ;;
   }
 
+
+
   dimension: brand_logo {
     type: string
     sql: ${brand} ;;
     html: {% if brand._value == "O'Neill" %}
       <img
-        <svg xmlns="https://upload.wikimedia.org/wikipedia/commons/9/99/Leo.svg" enable-background="new 0 0 24 24" height="30px"
+         <svg style="height: 30px; fill: #FFFFFF;" class="svg-icon" viewBox="0 0 24 24">
 
-                   viewBox="0 0 24 24" width="30px" fill="#FFFFFF">
+              <path d="M10.5,13H8v-3h2.5V7.5h3V10H16v3h-2.5v2.5h-3V13z M12,2L4,5v6.09c0,5.05,3.41,9.76,8,10.91c4.59-1.15,8-5.86,8-10.91V5L12,2 z M18,11.09c0,4-2.55,7.7-6,8.83c-3.45-1.13-6-4.82-6-8.83v-4.7l6-2.25l6,2.25V11.09z"></path>
 
-                    <rect fill="none" height="24" width="24" />
-
-                    <path
-
-                        d="M10.5,13H8v-3h2.5V7.5h3V10H16v3h-2.5v2.5h-3V13z M12,2L4,5v6.09c0,5.05,3.41,9.76,8,10.91c4.59-1.15,8-5.86,8-10.91V5L12,2 z M18,11.09c0,4-2.55,7.7-6,8.83c-3.45-1.13-6-4.82-6-8.83v-4.7l6-2.25l6,2.25V11.09z" />
-
-                </svg>
+            </svg>
                   </img>
         {% elsif brand._value == "Calvin Klein" %}
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Calvin_klein_logo.svg/220px-Calvin_klein_logo.svg.png">
