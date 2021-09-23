@@ -5,6 +5,7 @@ view: events {
 
   dimension: id {
     primary_key: yes
+    label: "Event ID"
     type: number
     sql: ${TABLE}."ID" ;;
   }
