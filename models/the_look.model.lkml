@@ -24,7 +24,15 @@ join: inventory_items {
   type: full_outer
   relationship: one_to_one
   sql_on: ${inventory_items.id} = ${order_items.inventory_item_id} ;;
-}}
+}
+
+join: users {
+  view_label: "All Users"
+  type: left_outer
+  relationship: many_to_one
+  sql_on: ${users.id} = ${order_items.user_id} ;;
+}
+}
 
 explore: repeat_purchase_facts {
 
