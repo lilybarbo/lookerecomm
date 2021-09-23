@@ -14,7 +14,7 @@ persist_with: the_look_default_datagroup
 
 explore: order_items {
 label: "(1) Orders, Items and Users"
-view_name: order_items
+view_label: "Orders"
 description: "All order items since 1/1/2020"
 sql_always_where: ${created_date} >= '2020-01-01' ;;
 
