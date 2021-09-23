@@ -11,21 +11,25 @@ view: users {
 
   dimension: age {
     type: number
+    group_label: "Demographics"
     sql: ${TABLE}."AGE" ;;
   }
 
   dimension: city {
     type: string
+    group_label: "Demographics"
     sql: ${TABLE}."CITY" ;;
   }
 
   dimension: city_state {
     type: string
+    group_label: "Demographics"
     sql: concat(${city}, ',',${state} ;;
   }
 
   dimension: country {
     type: string
+    group_label: "Demographics"
     map_layer_name: countries
     sql: ${TABLE}."COUNTRY" ;;
   }
@@ -56,6 +60,7 @@ view: users {
 
   dimension: gender {
     type: string
+    group_label: "Demographics"
     sql: ${TABLE}."GENDER" ;;
   }
 
@@ -76,6 +81,7 @@ view: users {
 
   dimension: state {
     type: string
+    group_label: "Demographics"
     sql: ${TABLE}."STATE" ;;
   }
 
