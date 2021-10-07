@@ -16,7 +16,7 @@ explore: order_items {
 label: "(1) Orders, Items and Users"
 view_label: "Orders"
 description: "All order items since 1/1/2020"
-sql_always_where: ${created_date} >= '2020-01-01' ;;
+group_label: "eCommerce 2"
 
 join: inventory_items {
   #Left Join only brings in items that have been sold as order_item
