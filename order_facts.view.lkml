@@ -3,19 +3,20 @@ view: order_facts {
     sql: SELECT
         order_items.order_id AS order_id
         ,COUNT(*) AS item_count
-        ,SUM(order_items.sale_price) AS lifetime_revenue  --we might also be interested in average order total per age group
+        ,SUM(order_items.sale_price) AS lifetime_revenue
       FROM order_items
       GROUP BY order_id
        ;;
   }
 
-  # # measure: count {
-  # #   type: count
-  # #   drill_fields: [detail*]
+  # measure: count {
+  #   type: count
+  #   drill_fields: [detail*]
   # }
 
   dimension: order_id {
     type: number
+    primary_key: yes
     sql: ${TABLE}."ORDER_ID" ;;
   }
 
