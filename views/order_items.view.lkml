@@ -114,9 +114,11 @@ view: order_items {
     sql: ${sale_price} ;;
   }
 
-  measure: total_sales {
+  measure: total_revenue {
     type: sum
+    value_format_name: usd
     sql: ${sale_price} ;;
+    drill_fields: [detail*]
   }
 
   # ----- Sets of fields for drilling ------
